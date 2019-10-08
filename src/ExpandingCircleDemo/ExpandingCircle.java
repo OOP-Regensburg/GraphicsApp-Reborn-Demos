@@ -6,12 +6,12 @@ import de.mi.ur.gpr.graphics.Circle;
 
 public class ExpandingCircle extends GraphicsApp {
 
-    private static final int INITAL_RADIUS = 10;
+    private static final int INITIAL_RADIUS = 10;
     private Circle circle;
 
     @Override
-    public void init() {
-        circle = new Circle(getWidth()/2, getHeight()/2, INITAL_RADIUS);
+    public void initialize() {
+        circle = new Circle(getWidth()/2, getHeight()/2, INITIAL_RADIUS);
     }
 
     @Override

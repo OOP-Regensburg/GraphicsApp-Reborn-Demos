@@ -9,7 +9,7 @@ public class SimpleDemo extends GraphicsApp {
     private Rectangle rect;
 
     @Override
-    public void init() {
+    public void initialize() {
         rect = new Rectangle(5,5,100,100);
 
     }

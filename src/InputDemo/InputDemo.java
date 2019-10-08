@@ -15,7 +15,7 @@ public class InputDemo extends GraphicsApp {
 
 
     @Override
-    public void init() {
+    public void initialize() {
         target = new Circle(getWidth() / 2, getHeight() / 2, 50, Colors.getRandomColor());
     }
 
@@ -27,14 +27,14 @@ public class InputDemo extends GraphicsApp {
     }
 
     private void moveTo(int xPos, int yPos) {
-        float xDelta = Math.abs(xPos - target.getxPos());
-        float yDelta = Math.abs(yPos - target.getyPos());
+        float xDelta = Math.abs(xPos - target.getXPos());
+        float yDelta = Math.abs(yPos - target.getYPos());
         xSpeed = 1;
         ySpeed = xSpeed * (yDelta / xDelta);
-        if (xPos < target.getxPos()) {
+        if (xPos < target.getXPos()) {
             xSpeed = -xSpeed;
         }
-        if (yPos < target.getyPos()) {
+        if (yPos < target.getYPos()) {
             ySpeed = -ySpeed;
         }
     }

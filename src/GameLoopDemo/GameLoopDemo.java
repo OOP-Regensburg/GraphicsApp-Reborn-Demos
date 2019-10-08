@@ -19,7 +19,7 @@ public class GameLoopDemo extends GraphicsApp {
     private ArrayList<Rectangle> cars;
 
     @Override
-    public void init() {
+    public void initialize() {
         System.out.println("in: init");
         rand = new Random();
         cars = new ArrayList<Rectangle>();

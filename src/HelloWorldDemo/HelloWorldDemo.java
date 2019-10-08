@@ -8,7 +8,7 @@ public class HelloWorldDemo extends GraphicsApp {
     private Label label;
 
     @Override
-    public void init() {
+    public void initialize() {
         label = new Label(50,50,"Hello World");
     }
 

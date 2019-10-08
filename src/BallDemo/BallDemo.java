@@ -12,7 +12,7 @@ public class BallDemo extends GraphicsApp {
     private Random rand;
 
     @Override
-    public void init() {
+    public void initialize() {
         balls = new Ball[MAX_BALLS];
         for(int i = 0; i < balls.length; i++) {
             balls[i] = createRandomBall();
@@ -33,7 +33,7 @@ public class BallDemo extends GraphicsApp {
         if(speedY == 0) {
             speedY = 1;
         }
-        return new Ball(startX,startY,speedX,speedY);
+        return new Ball(startX, startY, speedX, speedY);
     }
 
     @Override

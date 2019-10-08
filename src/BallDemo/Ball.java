@@ -18,11 +18,11 @@ public class Ball {
         this.yPos = y;
         this.xSpeed = xSpeed;
         this.ySpeed = ySpeed;
-        this.circle = new Circle(x,y,DEFAULT_RADIUS, Colors.getRandomColor());
+        this.circle = new Circle(x, y, DEFAULT_RADIUS, Colors.getRandomColor());
     }
 
     public void update() {
-        circle.move(xSpeed,ySpeed);
+        circle.move(xSpeed, ySpeed);
     }
 
     public void draw() {

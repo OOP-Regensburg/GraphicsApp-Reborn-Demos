@@ -14,7 +14,7 @@ public class ImageDemo extends GraphicsApp {
     private ArrayList<Image> images;
 
     @Override
-    public void init() {
+    public void initialize() {
         rand = new Random();
         images = new ArrayList<Image>();
         for(int i = 0; i < NUMBER_OF_IMAGES; i++) {
@@ -33,8 +33,8 @@ public class ImageDemo extends GraphicsApp {
         for(Image image: images) {
             int newX = rand.nextInt(getWidth());
             int newY = rand.nextInt(getHeight());
-            image.setxPos(newX);
-            image.setyPos(newY);
+            image.setXPos(newX);
+            image.setYPos(newY);
             image.draw();
         }
     }
