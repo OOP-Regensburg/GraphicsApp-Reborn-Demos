@@ -1,6 +1,7 @@
 package InputDemo;
 
-import de.mi.ur.gpr.launcher.GraphicsAppLauncher;
+
+import de.ur.mi.oop.launcher.GraphicsAppLauncher;
 
 public class InputDemoLauncher {
 

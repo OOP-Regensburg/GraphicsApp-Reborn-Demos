@@ -1,7 +1,7 @@
 package GameLoopDemo;
 
-import de.mi.ur.gpr.launcher.GraphicsAppLauncher;
 
+import de.ur.mi.oop.launcher.GraphicsAppLauncher;
 
 public class GameLoopLauncher {
 

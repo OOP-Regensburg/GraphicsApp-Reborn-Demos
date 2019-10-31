@@ -1,11 +1,11 @@
 package GraphicsObjectDemo;
 
-import de.mi.ur.gpr.app.GraphicsApp;
-import de.mi.ur.gpr.colors.Color;
-import de.mi.ur.gpr.colors.Colors;
-import de.mi.ur.gpr.graphics.Circle;
-import de.mi.ur.gpr.graphics.Ellipse;
-import de.mi.ur.gpr.graphics.Line;
+
+import de.ur.mi.oop.app.GraphicsApp;
+import de.ur.mi.oop.colors.Colors;
+import de.ur.mi.oop.graphics.Circle;
+import de.ur.mi.oop.graphics.Ellipse;
+import de.ur.mi.oop.graphics.Line;
 
 public class GraphicsObjectDemo extends GraphicsApp {
 

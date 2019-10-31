@@ -1,8 +1,9 @@
 package ImageDemo;
 
-import de.mi.ur.gpr.app.GraphicsApp;
-import de.mi.ur.gpr.colors.Colors;
-import de.mi.ur.gpr.graphics.Image;
+
+import de.ur.mi.oop.app.GraphicsApp;
+import de.ur.mi.oop.colors.Colors;
+import de.ur.mi.oop.graphics.Image;
 
 import java.util.ArrayList;
 import java.util.Random;

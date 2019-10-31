@@ -1,7 +1,8 @@
 package BallDemo;
 
-import de.mi.ur.gpr.colors.Colors;
-import de.mi.ur.gpr.graphics.Circle;
+
+import de.ur.mi.oop.colors.Colors;
+import de.ur.mi.oop.graphics.Circle;
 
 public class Ball {
 

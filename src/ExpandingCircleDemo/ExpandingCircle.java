@@ -1,8 +1,9 @@
 package ExpandingCircleDemo;
 
-import de.mi.ur.gpr.app.GraphicsApp;
-import de.mi.ur.gpr.colors.Colors;
-import de.mi.ur.gpr.graphics.Circle;
+
+import de.ur.mi.oop.app.GraphicsApp;
+import de.ur.mi.oop.colors.Colors;
+import de.ur.mi.oop.graphics.Circle;
 
 public class ExpandingCircle extends GraphicsApp {
 
@@ -17,7 +18,7 @@ public class ExpandingCircle extends GraphicsApp {
     @Override
     public void draw() {
         drawBackground(Colors.WHITE);
-        int newRadius = circle.getRadius() + 1;
+        int newRadius = (int) (circle.getRadius() + 1);
         circle.setRadius(newRadius);
         circle.draw();
     }

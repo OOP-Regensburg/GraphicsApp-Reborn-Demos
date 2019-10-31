@@ -1,10 +1,12 @@
 package BallDemo;
 
-import de.mi.ur.gpr.launcher.GraphicsAppLauncher;
+import de.ur.mi.oop.launcher.GraphicsAppLauncher;
 
 public class BallDemoLauncher {
 
     public static void main(String[] args) {
+        System.out.println("Working Directory = " +
+                System.getProperty("user.dir"));
         GraphicsAppLauncher.launch("BallDemo");
     }
 }

@@ -1,7 +1,9 @@
 package BallDemo;
 
-import de.mi.ur.gpr.app.GraphicsApp;
-import de.mi.ur.gpr.colors.Colors;
+
+
+import de.ur.mi.oop.app.GraphicsApp;
+import de.ur.mi.oop.colors.Colors;
 
 import java.util.Random;
 

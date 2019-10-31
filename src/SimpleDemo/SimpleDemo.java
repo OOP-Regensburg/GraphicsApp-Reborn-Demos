@@ -1,8 +1,9 @@
 package SimpleDemo;
 
-import de.mi.ur.gpr.app.GraphicsApp;
-import de.mi.ur.gpr.colors.Colors;
-import de.mi.ur.gpr.graphics.Rectangle;
+
+import de.ur.mi.oop.app.GraphicsApp;
+import de.ur.mi.oop.colors.Colors;
+import de.ur.mi.oop.graphics.Rectangle;
 
 public class SimpleDemo extends GraphicsApp {
 

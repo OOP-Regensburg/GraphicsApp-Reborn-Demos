@@ -1,11 +1,11 @@
 package InputDemo;
 
-import de.mi.ur.gpr.app.GraphicsApp;
-import de.mi.ur.gpr.colors.Color;
-import de.mi.ur.gpr.colors.Colors;
-import de.mi.ur.gpr.events.KeyPressedEvent;
-import de.mi.ur.gpr.events.MouseClickedEvent;
-import de.mi.ur.gpr.graphics.Circle;
+
+import de.ur.mi.oop.app.GraphicsApp;
+import de.ur.mi.oop.colors.Colors;
+import de.ur.mi.oop.events.KeyPressedEvent;
+import de.ur.mi.oop.events.MouseClickedEvent;
+import de.ur.mi.oop.graphics.Circle;
 
 public class InputDemo extends GraphicsApp {
 

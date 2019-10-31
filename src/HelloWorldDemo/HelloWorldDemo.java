@@ -1,7 +1,8 @@
 package HelloWorldDemo;
 
-import de.mi.ur.gpr.app.GraphicsApp;
-import de.mi.ur.gpr.graphics.Label;
+
+import de.ur.mi.oop.app.GraphicsApp;
+import de.ur.mi.oop.graphics.Label;
 
 public class HelloWorldDemo extends GraphicsApp {
 

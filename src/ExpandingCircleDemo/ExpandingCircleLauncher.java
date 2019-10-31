@@ -1,6 +1,7 @@
 package ExpandingCircleDemo;
 
-import de.mi.ur.gpr.launcher.GraphicsAppLauncher;
+
+import de.ur.mi.oop.launcher.GraphicsAppLauncher;
 
 public class ExpandingCircleLauncher {
 
