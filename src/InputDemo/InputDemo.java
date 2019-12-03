@@ -3,9 +3,7 @@ package InputDemo;
 
 import de.ur.mi.oop.app.GraphicsApp;
 import de.ur.mi.oop.colors.Colors;
-import de.ur.mi.oop.events.KeyPressedEvent;
-import de.ur.mi.oop.events.KeyTypedEvent;
-import de.ur.mi.oop.events.MouseClickedEvent;
+import de.ur.mi.oop.events.*;
 import de.ur.mi.oop.graphics.Circle;
 
 public class InputDemo extends GraphicsApp {
@@ -85,5 +83,19 @@ public class InputDemo extends GraphicsApp {
     public void onMouseClicked(MouseClickedEvent event) {
         System.out.println("Mouse clicked [" + event.getXPos() + "/" + event.getYPos() + "]");
         moveTo(event.getXPos(), event.getYPos());
+    }
+
+    @Override
+    public void onMousePressed(MousePressedEvent event) {
+        System.out.println("Mouse pressed [" + event.getXPos() + "/" + event.getYPos() + "]");
+        moveTo(event.getXPos(), event.getYPos());
+        target.setColor(Colors.getRandomColor());
+    }
+
+    @Override
+    public void onMouseReleased(MouseReleasedEvent event) {
+        System.out.println("Mouse released [" + event.getXPos() + "/" + event.getYPos() + "]");
+        moveTo(event.getXPos(), event.getYPos());
+        target.setColor(Colors.RED);
     }
 }
