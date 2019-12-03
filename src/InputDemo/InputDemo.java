@@ -4,6 +4,7 @@ package InputDemo;
 import de.ur.mi.oop.app.GraphicsApp;
 import de.ur.mi.oop.colors.Colors;
 import de.ur.mi.oop.events.KeyPressedEvent;
+import de.ur.mi.oop.events.KeyTypedEvent;
 import de.ur.mi.oop.events.MouseClickedEvent;
 import de.ur.mi.oop.graphics.Circle;
 
@@ -41,7 +42,7 @@ public class InputDemo extends GraphicsApp {
 
     @Override
     public void onKeyPressed(KeyPressedEvent event) {
-        switch (event.keyChar) {
+        switch (event.getKeyChar()) {
             case 'w':
                 ySpeed = -1;
                 xSpeed = 0;
@@ -65,11 +66,24 @@ public class InputDemo extends GraphicsApp {
             default:
                 break;
         }
+
+        switch (event.getKeyCode()) {
+            case KeyPressedEvent.VK_UP:
+                ySpeed = -1;
+                xSpeed = 0;
+                break;
+            case KeyPressedEvent.VK_DOWN:
+                ySpeed = 1;
+                xSpeed = 0;
+                break;
+            default:
+                break;
+        }
     }
 
     @Override
     public void onMouseClicked(MouseClickedEvent event) {
-        System.out.println("Mouse clicked [" + event.xPos + "/" + event.yPos + "]");
-        moveTo(event.xPos, event.yPos);
+        System.out.println("Mouse clicked [" + event.getXPos() + "/" + event.getYPos() + "]");
+        moveTo(event.getXPos(), event.getYPos());
     }
 }
