@@ -6,6 +6,7 @@ import de.ur.mi.oop.colors.Colors;
 import de.ur.mi.oop.graphics.Circle;
 import de.ur.mi.oop.graphics.Ellipse;
 import de.ur.mi.oop.graphics.Line;
+import de.ur.mi.oop.launcher.GraphicsAppLauncher;
 
 public class GraphicsObjectDemo extends GraphicsApp {
 
@@ -27,5 +28,9 @@ public class GraphicsObjectDemo extends GraphicsApp {
         line.draw();
         circle.draw();
         ellipse.draw();
+    }
+
+    public static void main(String[] args) {
+        GraphicsAppLauncher.launch();
     }
 }

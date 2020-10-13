@@ -5,6 +5,7 @@ import de.ur.mi.oop.app.GraphicsApp;
 import de.ur.mi.oop.colors.Colors;
 import de.ur.mi.oop.events.*;
 import de.ur.mi.oop.graphics.Circle;
+import de.ur.mi.oop.launcher.GraphicsAppLauncher;
 
 public class InputDemo extends GraphicsApp {
 
@@ -80,12 +81,6 @@ public class InputDemo extends GraphicsApp {
     }
 
     @Override
-    public void onMouseClicked(MouseClickedEvent event) {
-        System.out.println("Mouse clicked [" + event.getXPos() + "/" + event.getYPos() + "]");
-        moveTo(event.getXPos(), event.getYPos());
-    }
-
-    @Override
     public void onMousePressed(MousePressedEvent event) {
         System.out.println("Mouse pressed [" + event.getXPos() + "/" + event.getYPos() + "]");
         moveTo(event.getXPos(), event.getYPos());
@@ -97,5 +92,9 @@ public class InputDemo extends GraphicsApp {
         System.out.println("Mouse released [" + event.getXPos() + "/" + event.getYPos() + "]");
         moveTo(event.getXPos(), event.getYPos());
         target.setColor(Colors.RED);
+    }
+
+    public static void main(String[] args) {
+        GraphicsAppLauncher.launch();
     }
 }
