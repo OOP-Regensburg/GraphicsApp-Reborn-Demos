@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class AudioDemo extends GraphicsApp {
 
-    private static final int GRID_SIZE = SoundBlock.DEFAULT_SIZE;
+    private static final int GRID_SIZE = SoundBlock.SIZE;
     private ArrayList<SoundBlock> blocks;
 
     @Override
@@ -43,7 +43,7 @@ public class AudioDemo extends GraphicsApp {
     @Override
     public void onMousePressed(MousePressedEvent event) {
         for(SoundBlock block: blocks) {
-            if(block.hitTest(event.getXPos(), event.getYPos())) {
+            if(block.isClicked(event.getXPos(), event.getYPos())) {
                 block.toggle();
             }
         }
